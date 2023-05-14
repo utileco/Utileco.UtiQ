@@ -1,7 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Utileco.UtiQ.Command;
-using Utileco.UtiQ.Contracts;
-using Utileco.UtiQ.Query;
 
 namespace Utileco.UtiQ.Wrapper
 {

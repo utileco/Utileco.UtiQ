@@ -1,6 +1,4 @@
-﻿using Utileco.UtiQ.Contracts;
-
-namespace Utileco.UtiQ
+﻿namespace Utileco.UtiQ
 {
     public interface IUtiQ
     {

@@ -1,6 +1,4 @@
-﻿using Utileco.UtiQ.Contracts;
-
-namespace Utileco.UtiQ.Command
+﻿namespace Utileco.UtiQ
 {
     public interface ICommandHandler<in TRequest>
         where TRequest : ICommand

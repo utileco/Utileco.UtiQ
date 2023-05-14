@@ -1,8 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using System.Reflection;
-using Utileco.UtiQ.Command;
-using Utileco.UtiQ.Query;
 
 namespace Utileco.UtiQ.DI
 {

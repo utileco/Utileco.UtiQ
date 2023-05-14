@@ -1,6 +1,4 @@
-﻿using Utileco.UtiQ.Contracts;
-
-namespace Utileco.UtiQ.Query
+﻿namespace Utileco.UtiQ
 {
     public interface IQueryHandler<in TRequest, TResult>
         where TRequest : IQuery<TResult>
