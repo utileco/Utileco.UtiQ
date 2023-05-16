@@ -2,6 +2,7 @@ name: "Deploy to nuget"
 
 on:
   push:
+    branches: [ "main" ]
     tags:
     - 'v*'
 
