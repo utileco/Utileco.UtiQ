@@ -2,8 +2,8 @@ name: "Deploy to nuget"
 
 on:
   push:
-    tags:
-    - 'v*'
+    branches: [ "main" ]
+    tags: [ 'v*' ]
 
 env: 
     PROJECT_PATH: 'src/Utileco.UtiQ/Utileco.UtiQ.csproj'
