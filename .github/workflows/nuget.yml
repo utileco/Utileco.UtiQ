@@ -3,7 +3,8 @@ name: "Deploy to nuget"
 on:
   push:
     branches: [ "main" ]
-    tags: [ 'v*' ]
+    tags: 
+      -'v*'
 
 env: 
     PROJECT_PATH: 'src/Utileco.UtiQ/Utileco.UtiQ.csproj'
@@ -34,7 +35,7 @@ jobs:
           uses: battila7/get-version-action@v2
 
         - name: 'Pack project'
-          run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=${{ steps.version.outputs.version-without-v }} --output ${{ github.workspace }}\output
+          run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=2.0.0 --output ${{ github.workspace }}\output
 
         - name: 'Push package'
           run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}\*.nupkg -k ${{ secrets.NUGET_AUTH_TOKEN }} -s ${{ env.NUGET_SOURCE_URL }}
